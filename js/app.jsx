@@ -16,7 +16,7 @@ var app = app || {};
 
 	var ENTER_KEY = 13;
 
-	var TodoApp = React.createClass({
+	var ChecklistApp = React.createClass({
 		getInitialState: function () {
 			return {
 				nowShowing: app.ALL_TODOS,
@@ -175,8 +175,8 @@ var app = app || {};
 
 	function render() {
 		React.render(
-			<TodoApp model={model}/>,
-			document.getElementsByClassName('todoapp')[0]
+			<ChecklistApp model={model}/>,
+			document.getElementsByClassName('checklist')[0]
 		);
 	}
 

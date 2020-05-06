@@ -46,30 +46,30 @@ body {
 	display: none;
 }
 
-.todoapp {
+.checklist {
 	margin: 130px 0 40px 0;
 	position: relative;
 }
 
-.todoapp input::-webkit-input-placeholder {
+.checklist input::-webkit-input-placeholder {
 	font-style: italic;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.4);
 }
 
-.todoapp input::-moz-placeholder {
+.checklist input::-moz-placeholder {
 	font-style: italic;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.4);
 }
 
-.todoapp input::input-placeholder {
+.checklist input::input-placeholder {
 	font-style: italic;
 	font-weight: 300;
 	color: rgba(0, 0, 0, 0.4);
 }
 
-.todoapp h1 {
+.checklist h1 {
 	position: absolute;
 	top: -140px;
 	width: 100%;

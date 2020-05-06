@@ -144,7 +144,7 @@ var app = app || {};
 						<label
 							htmlFor="toggle-all"
 						/>
-						<ul className="todo-list">
+						<ul className="check-list">
 							{todoItems}
 						</ul>
 					</section>
@@ -154,10 +154,12 @@ var app = app || {};
 			return (
 				<div>
 					<header className="header">
-						<h1>todos</h1>
+						<i className="fa fa-check toggle-all-check" aria-hidden="true">
+						</i>
+						<h1>My checklist</h1>
 						<input
-							className="new-todo"
-							placeholder="What needs to be done?"
+							className="new-check"
+							placeholder="Type your task"
 							value={this.state.newTodo}
 							onKeyDown={this.handleNewTodoKeyDown}
 							onChange={this.handleChange}
@@ -171,7 +173,7 @@ var app = app || {};
 		}
 	});
 
-	var model = new app.TodoModel('react-todos');
+	var model = new app.ChecklistModel('react-todos');
 
 	function render() {
 		React.render(

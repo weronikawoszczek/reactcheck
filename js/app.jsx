@@ -19,7 +19,8 @@ var app = app || {};
 	var ChecklistApp = React.createClass({
 		getInitialState: function () {
 			return {
-				nowShowing: app.ALL_TODOS,
+				todo: [{id: 1, title:'new task', completed: false}],
+				nowShowing: app.ACTIVE_TODOS,
 				editing: null,
 				newTodo: ''
 			};
@@ -88,6 +89,7 @@ var app = app || {};
 			var footer;
 			var main;
 			var todos = this.props.model.todos;
+
 
 			var shownTodos = todos.filter(function (todo) {
 				switch (this.state.nowShowing) {

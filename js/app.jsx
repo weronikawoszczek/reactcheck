@@ -88,7 +88,7 @@ var app = app || {};
 		render: function () {
 			var footer;
 			var main;
-			var todos = this.props.model.todos;git
+			var todos = this.props.model.todos;
 
 			var shownTodos = todos.filter(function (todo) {
 				switch (this.state.nowShowing) {
